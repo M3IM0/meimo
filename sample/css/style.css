@@ -1,0 +1,22 @@
+canvas {
+  display: block;
+}
+
+.meimotop {
+  width: 15em;
+  position: fixed;
+  right: 1em;
+  bottom: 0;
+  color: gray;
+  text-align: right;
+}
+
+a {
+  color: #87e2d6;
+}
+a:hover, a:focus {
+  color: #5ed8c8;
+}
+a:active {
+  color: #35ceba;
+}

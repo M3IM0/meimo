@@ -1,0 +1,24 @@
+canvas {
+	display: block;
+}
+
+.note {
+	width: 12em;
+	position: fixed;
+	right: 1em;
+	bottom: 0;
+	color: #eee;
+	text-align: right;
+}
+
+a {
+	$color: red;
+	color: $color;
+	
+	&:hover, &:focus {
+		color: darken($color, 10%);
+	}
+	&:active {
+		color: darken($color, 20%);
+	}
+}
