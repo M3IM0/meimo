@@ -1,0 +1,3 @@
+# vi /etc/default/keyboard
+(下記を設定)
+XKBOPTIONS="ctrl:nocaps"

@@ -1,0 +1,54 @@
+cd Python
+
+Make sure we are in our home directory
+cd ~
+Upgrade any currently installed packages (may take a long time)
+sudo apt-get update
+sudo apt-get upgrade
+Install Tools:
+sudo apt-get install build-essential cmake git pkg-config
+Install File Format Libs
+sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
+Install Image -> GUI handler
+sudo apt-get install libgtk2.0-dev
+Just in case we want to do any Video Processing:
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+Install OpenCV Optimisation Libs
+sudo apt-get install libatlas-base-dev gfortran
+Install Python Package Manager (PIP)
+wget https://bootstrap.pypa.io/get-pip.py
+sudo -H python get-pip.py
+Install Python 2.7
+sudo -H apt-get install python2.7-dev
+Install Python library numpy as it is used by Python for Image representation.
+sudo pip install numpy
+ 
+
+OpenCV
+
+Get the latest OpenCV build from GitHub
+cd ~
+git clone https://github.com/Itseez/opencv.git
+cd opencv
+git checkout 3.1.0
+Get the contributed libraries too
+cd ~
+git clone https://github.com/Itseez/opencv_contrib.git
+cd opencv_contrib
+git checkout 3.1.0
+Build
+cd ~/opencv
+$ mkdir build
+$ cd build
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D INSTALL_C_EXAMPLES=OFF \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+-D BUILD_EXAMPLES=ON ..
+Compile OpenCV
+make -j4
+If you run out of disk space on your VM check out the little guide on extending your Virtual Disk
+Install OpenCV
+sudo make install
+sudo ldconfig

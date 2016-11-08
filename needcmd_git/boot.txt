@@ -1,0 +1,7 @@
+/etc/default/grub
+
+sudo emacs /etc/default/grub
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+
+insert "nomodeset" text.

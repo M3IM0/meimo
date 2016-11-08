@@ -1,0 +1,4 @@
+fix this command follow
+
+gsettings set org.gnome.metacity theme Numix
+
