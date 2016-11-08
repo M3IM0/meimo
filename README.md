@@ -1,8 +1,4 @@
 # meimo
-## henkou
-# test
-#rast
-
 <!--
  .dHH@HH@HHH@HH@HN                ,HH@HH@HH@HH@HH@HHMa.  MMN  .MMN
 .H@H@H@HH@@HH@HH@M                ,@HH@HH@HH@HH@HH@H@HN  MMM) (MMM
